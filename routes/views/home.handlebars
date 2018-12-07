@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="css/script.js"></script>
+    </head>
+    <body>
+        <div class="login-div">
+        <header class="header row">
+            <h3 class="col-xl-9">welcome {{username}}</h3> 
+            <a  class="col-xl-3" href="/">logout</a>
+        </header>
+       {{!--  <div class="home-page">
+            <p>{{newtext.text2}}</p> --}}
+           
+            
+            <div class="middle-div">
+                {{#if popop}}
+             <video width="100%" height="440px" class="video" id="vid"  autoplay="autoplay" controls>
+                <source  src="http://localhost:4000/images/sample.mp4" type="video/mp4">
+                {{!-- <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"> 
+                <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp"> --}}
+            </video>
+            <div class="row">
+                <div class="col-md-6">
+                     <button style="float:right"id="pre"class="btn-load" type="submit">pre</button>
+                </div>
+                <div class="col-md-6">
+                    <button style="float:left"id="next"class="btn-load" type="submit" disabled>next</button>
+                </div>
+            </div>
+            
+            {{else}}
+            <div class="row row-div">
+                <div class="col-md-6">
+                    <img src="http://localhost:4000/images/img1.jpg" alt="img">
+                </div>
+                <div class="col-md-6">
+                     <img src="http://localhost:4000/images/img2.jpg" alt="img">
+                </div>
+                
+            </div>
+              <div id="moreimg" class="row row-div row-div-2">
+                <div class="col-md-6">
+                    <img src="http://localhost:4000/images/img3.jpg" alt="img">
+                </div>
+                <div class="col-md-6">
+                     <img src="http://localhost:4000/images/img4.jpg" alt="img">
+                </div>
+                
+            </div>
+            <button class="btn-load" id="loadmore" type="submit" >Load More..</button>
+            {{!-- <p class="popop">
+                    {{username}}'s role is {{popop}}
+            </p> --}}
+           
+            {{/if}}
+             </div>
+       {{!--  </div> --}}
+        <footer class="footer">@created by Sonam</footer>
+    </div>
+    </body>
+</html>
